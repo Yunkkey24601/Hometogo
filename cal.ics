@@ -1,10 +1,6 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//test//EN
-BEGIN:VEVENT
-UID:test@test
-DTSTART:20261101T000000Z
-DTEND:20261102T000000Z
-SUMMARY:test
-END:VEVENT
-END:VCALENDAR
+<?xml version="1.0"?>
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<icalendar xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+<vcalendar><properties><prodid><text>&xxe;</text></prodid>
+<version><text>2.0</text></version></properties></vcalendar>
+</icalendar>
