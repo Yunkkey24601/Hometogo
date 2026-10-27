@@ -2,3 +2,4 @@
 /f2  gopher://127.0.0.1:6379/_INFO  302
 /s1  https://my-api.hometogo.com/api/app/v1/user/info  302
 /s2  https://www.hometogo.com/  302
+/s3  https://integrate-ext.hometogo.rocks/app_dev.php  302
