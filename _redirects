@@ -11,3 +11,5 @@
 /k http://127.0.0.1:2375/  302
 /l http://127.0.0.1:5601/  302
 /m http://127.0.0.1:8500/  302
+/r1  http://make-1.2.3.4-rebind-127.0.0.1-rr.1u.ms/  302
+/r2  http://make-1.2.3.4-rebind-169.254.169.254-rr.1u.ms/latest/meta-data/  302
